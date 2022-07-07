@@ -22,6 +22,11 @@ export default function Header(props) {
             GitHub
           </a>
         </li>
+        <li className="nav-item deployed">
+          <a href="https://www.codewars.com/users/leoelicos" style={styles.footerLinks}>
+            CodeWars
+          </a>
+        </li>
       </ul>
     </footer>
   );
