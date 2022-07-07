@@ -1,5 +1,6 @@
 import React from 'react';
 import Project from './Project';
+
 export default function Portfolio() {
   const projects = [
     {
@@ -52,13 +53,12 @@ export default function Portfolio() {
       imageURL: 'https://leoelicos.github.io/bcs-02-professional-portfolio/assets/images/project/kiddle.jpg'
     }
   ];
-  const renderedProjects = projects.map((project) => {
-    return <Project key={project.title} title={project.title} description={project.description} deployedURL={project.deployedURL} repoURL={project.repoURL} imageURL={project.repoURL} />;
-  });
+
   return (
-    <div>
-      <h1>My Applications</h1>
-      <ol>{renderedProjects}</ol>
+    <div className="centered">
+      {projects.map((p) => {
+        return <Project key={p.title} title={p.title} description={p.description} deployedURL={p.deployedURL} repoURL={p.repoURL} imageURL={p.imageURL} />;
+      })}
     </div>
   );
 }

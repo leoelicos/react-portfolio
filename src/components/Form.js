@@ -52,28 +52,24 @@ function Form() {
     setMessage('');
   };
 
-  const formStyle = {
-    margin: '20px'
-  };
-
-  const formInputStyle = {
-    display: 'block',
-    marginTop: '5px',
-    marginBottom: '5px',
-    width: '100%'
-  };
-
   return (
     <div>
-      <p>Hello {name}</p>
-      <form className="form" style={formStyle}>
-        <input value={name} name="name" onChange={handleInputChange} type="text" placeholder="Name" style={formInputStyle} />
-        <input value={email} name="email" onChange={handleInputChange} type="email" placeholder="Email" style={formInputStyle} />
-        <input value={message} name="message" onChange={handleInputChange} type="textarea" placeholder="Message" style={formInputStyle} />
-        <button type="submit" onClick={handleFormSubmit}>
-          Submit
-        </button>
+      <form id="contact-form">
+        <label for="contactName" id="label-contactName">
+          Your Name:
+        </label>
+        <input id="input-contactName" required="" value={name} name="name" onChange={handleInputChange} type="text" placeholder="Name" />
+        <label for="contactEmail" id="label-contactEmail">
+          Your Email:
+        </label>
+        <input id="input-contactEmail" required="" value={email} name="email" onChange={handleInputChange} type="email" placeholder="Email" />
+        <label for="contactMessage" id="label-contactMessage">
+          Your Message:
+        </label>
+        <input id="input-contactMessage" value={message} name="message" onChange={handleInputChange} type="textarea" placeholder="Message" />
+        <input type="submit" id="label-send" value="Send Your Message" onClick={handleFormSubmit} className="btn-wrapper" />
       </form>
+
       {errorMessage && (
         <div>
           <p className="error-text">{errorMessage}</p>
