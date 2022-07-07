@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import './style.css';
 
-import { validateEmail } from '../../utils/helpers';
+import { validateEmail } from '../utils/helpers';
 
 function Form() {
   const [name, setName] = useState('');
@@ -53,13 +52,24 @@ function Form() {
     setMessage('');
   };
 
+  const formStyle = {
+    margin: '20px'
+  };
+
+  const formInputStyle = {
+    display: 'block',
+    marginTop: '5px',
+    marginBottom: '5px',
+    width: '100%'
+  };
+
   return (
     <div>
       <p>Hello {name}</p>
-      <form className="form">
-        <input value={name} name="name" onChange={handleInputChange} type="text" placeholder="Name" />
-        <input value={email} name="email" onChange={handleInputChange} type="email" placeholder="Email" />
-        <input value={message} name="message" onChange={handleInputChange} type="textarea" placeholder="Message" />
+      <form className="form" style={formStyle}>
+        <input value={name} name="name" onChange={handleInputChange} type="text" placeholder="Name" style={formInputStyle} />
+        <input value={email} name="email" onChange={handleInputChange} type="email" placeholder="Email" style={formInputStyle} />
+        <input value={message} name="message" onChange={handleInputChange} type="textarea" placeholder="Message" style={formInputStyle} />
         <button type="submit" onClick={handleFormSubmit}>
           Submit
         </button>
