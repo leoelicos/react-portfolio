@@ -2,12 +2,12 @@ import React from 'react';
 
 export default function Resume() {
   return (
-    <div>
-      <h1>Download Resume</h1>
-      <a target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1h8cJZCP00_rwluAvS5hHzIPyXsKbvkZm/view?usp=sharing">
-        <p>Resume</p>
+    <div className="d-flex flex-column align-items-center">
+      <h2 style={{ marginTop: '1rem' }}>Resume</h2>
+      <a className="deployed" target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1h8cJZCP00_rwluAvS5hHzIPyXsKbvkZm/view?usp=sharing">
+        Resume
       </a>
-      <h2>Front-end Proficiencies</h2>
+      <h2 style={{ marginTop: '1rem' }}>Front-end Proficiencies</h2>
       <ul>
         <li>HTML</li>
         <li>CSS</li>
@@ -15,7 +15,7 @@ export default function Resume() {
         <li>Handlebars</li>
         <li>React.js</li>
       </ul>
-      <h2>Back-end Proficiencies</h2>
+      <h2 style={{ marginTop: '1rem' }}>Back-end Proficiencies</h2>
       <ul>
         <li>Node.js</li>
         <li>Express.js</li>
