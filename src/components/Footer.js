@@ -1,10 +1,7 @@
 import React from 'react';
 const styles = {
   footerLinks: {
-    margin: '0 1rem -1px 1rem',
     background: '0 0',
-    borderTopLeftRadius: '0.25rem',
-    borderTopRightRadius: '0.25rem',
     fontSize: '1rem'
   }
 };
@@ -13,17 +10,17 @@ export default function Header(props) {
     <footer>
       <ul className="nav">
         <li className="nav-item deployed">
-          <a href="https://www.linkedin.com/in/leo-wong-b9b570129/" style={styles.footerLinks}>
+          <a href="https://www.linkedin.com/in/leo-wong-b9b570129/" className="footer-content" style={styles.footerLinks}>
             Linkedin
           </a>
         </li>
         <li className="nav-item deployed">
-          <a href="https://github.com/leoelicos?tab=repositories" style={styles.footerLinks}>
+          <a href="https://github.com/leoelicos?tab=repositories" className="footer-content" style={styles.footerLinks}>
             GitHub
           </a>
         </li>
         <li className="nav-item deployed">
-          <a href="https://www.codewars.com/users/leoelicos" style={styles.footerLinks}>
+          <a href="https://www.codewars.com/users/leoelicos" className="footer-content" style={styles.footerLinks}>
             CodeWars
           </a>
         </li>
