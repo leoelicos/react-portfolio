@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useId } from 'react';
 
 import { validateEmail } from '../utils/helpers';
 
@@ -52,22 +52,21 @@ function Form() {
     setMessage('');
   };
 
+  const contactFormId = useId();
+  const contactNameId = useId();
+  const contactEmailId = useId();
+  const contactMessageId = useId();
+
   return (
-    <div>
-      <form id="contact-form">
-        <label for="contactName" id="label-contactName">
-          Your Name:
-        </label>
-        <input id="input-contactName" required="" value={name} name="name" onChange={handleInputChange} type="text" placeholder="Name" />
-        <label for="contactEmail" id="label-contactEmail">
-          Your Email:
-        </label>
-        <input id="input-contactEmail" required="" value={email} name="email" onChange={handleInputChange} type="email" placeholder="Email" />
-        <label for="contactMessage" id="label-contactMessage">
-          Your Message:
-        </label>
-        <input id="input-contactMessage" value={message} name="message" onChange={handleInputChange} type="textarea" placeholder="Message" />
-        <input type="submit" id="label-send" value="Send Your Message" onClick={handleFormSubmit} className="btn-wrapper" />
+    <>
+      <form id={contactFormId}>
+        <label htmlFor={contactNameId}>Your Name:</label>
+        <input id={contactNameId} required="" value={name} name="name" onChange={handleInputChange} type="text" />
+        <label htmlFor={contactEmailId}>Your Email:</label>
+        <input id={contactEmailId} required="" value={email} name="email" onChange={handleInputChange} type="email" />
+        <label htmlFor={contactMessageId}>Your Message:</label>
+        <input id={contactMessageId} value={message} name="message" onChange={handleInputChange} type="textarea" />
+        <input type="submit" id="send-button" value="Send Your Message" onClick={handleFormSubmit} className="btn-wrapper" />
       </form>
 
       {errorMessage && (
@@ -75,7 +74,7 @@ function Form() {
           <p className="error-text">{errorMessage}</p>
         </div>
       )}
-    </div>
+    </>
   );
 }
 
