@@ -47,19 +47,27 @@ npm start
 
 ## Video Demo
 
-https://user-images.githubusercontent.com/99461390/177762797-a09a489f-5d32-49fb-9646-2e3d79a82b59.mp4
+https://user-images.githubusercontent.com/99461390/180646040-6519273b-f88e-4527-8a80-da77214fc479.mp4
 
-Video is also available on [YouTube](https://www.youtube.com/watch?v=BbqqPncO04s)
+Video is also available on [YouTube](https://www.youtube.com/watch?v=IbvLJWuH7FM)
 
 ## Screenshots
 
+### Homepage:
+
+![pastel_homepage](https://user-images.githubusercontent.com/99461390/180646041-04e70538-1f05-462e-882d-f33cfc2e0b46.jpg)
+
 ### Portfolio:
 
-![Portfolio Page](https://user-images.githubusercontent.com/99461390/177762818-3619b286-bf90-42ce-8301-70274113d6b7.jpg)
+![pastel_portfolio](https://user-images.githubusercontent.com/99461390/180646043-65bd5c68-c8eb-49b5-aaa0-2a564c7fafe4.jpg)
 
 ### Contact:
 
-![Contact Page](https://user-images.githubusercontent.com/99461390/177762811-fd841f9d-4e51-4f99-b655-61f8a2e4fa63.jpg)
+![pastel_contact](https://user-images.githubusercontent.com/99461390/180646045-b9bf3023-ac69-40f9-8845-afb230553f23.jpg)
+
+### Resume:
+
+![pastel_resume](https://user-images.githubusercontent.com/99461390/180646047-22573e0c-e2fa-413f-8ff5-f51b0b30d86c.jpg)
 
 ## Credits
 
