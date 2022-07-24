@@ -10,7 +10,7 @@ export default function Header(props) {
     <footer>
       <ul className="nav">
         <li className="nav-item deployed">
-          <a href="https://www.linkedin.com/in/leo-wong-b9b570129/" className="footer-content" style={styles.footerLinks}>
+          <a href="https://www.linkedin.com/in/leoelicos/" className="footer-content" style={styles.footerLinks}>
             Linkedin
           </a>
         </li>

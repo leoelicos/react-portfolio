@@ -41,15 +41,15 @@ export default function Portfolio() {
     {
       title: 'SYTYCJ',
       description: 'Timed Javascript Quiz',
-      deployedURL: 'https://github.com/leoelicos/bcs-04-code-quiz',
-      repoURL: 'https://leoelicos.github.io/bcs-04-code-quiz/',
+      repoURL: 'https://github.com/leoelicos/bcs-04-code-quiz',
+      deployedURL: 'https://leoelicos.github.io/bcs-04-code-quiz/',
       imageURL: 'https://leoelicos.github.io/bcs-02-professional-portfolio/assets/images/project/sytycj.jpg'
     },
     {
       title: 'KIDDLE',
       description: 'Wordle for kids',
-      deployedURL: 'https://github.com/leoelicos/bcs-04-word-guess',
-      repoURL: 'https://leoelicos.github.io/bcs-04-word-guess/',
+      repoURL: 'https://github.com/leoelicos/bcs-04-word-guess',
+      deployedURL: 'https://leoelicos.github.io/bcs-04-word-guess/',
       imageURL: 'https://leoelicos.github.io/bcs-02-professional-portfolio/assets/images/project/kiddle.jpg'
     }
   ];
