@@ -1,4 +1,4 @@
-# React Portfolio
+# Pastel Profile - A React Portfolio
 
 ![react](https://img.shields.io/badge/18.2.0-0?label=react.js&style=for-the-badge&labelColor=white&color=black)
 
